@@ -1,0 +1,23 @@
+{
+  "name": "ezrtv",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "run": "node app.js"
+  },
+  "keywords": [
+    "eztv"
+  ],
+  "author": "Koen Bollen <meneer@koenbollen.nl>",
+  "dependencies": {
+    "async": "^0.9.0",
+    "morgan": "^1.1.1",
+    "replay": "^1.10.3",
+    "express": "^4.4.4",
+    "jade": "^1.3.1",
+    "request": "^2.36.0",
+    "lodash": "^2.4.1",
+    "cheerio": "^0.17.0"
+  }
+}
