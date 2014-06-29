@@ -1,0 +1,15 @@
+extends layout
+block content
+  .pure-g.showlist
+    #showlist.pure-u-1-4.list
+      .show
+        span.name Game of Thrones
+        span.status Airing: Sunday
+    .pure-u-3-4.episodes
+      .no-selection Please select a show
+      .episode
+        span.file
+        span.links
+
+block scripts
+  script(src=static('/js/showlist.js'))

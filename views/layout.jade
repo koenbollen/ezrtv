@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title EZRTV
+    link(rel='stylesheet', href=static('/css/pure-min.css'))
+    link(rel='stylesheet', href=static('/css/style.css'))
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no, minimal-ui')
+  body
+
+    #layout
+      a#menuLink.menu-link(href='#menu'): span
+      #menu
+        .pure-menu.pure-menu-open
+          a.pure-menu-heading(href='#') EZRTV
+          ul
+            li: a(href='/mypage') My Page
+            li.pure-menu-selected: a(href='/shows') Show List
+            li.menu-item-divided: a(href='#') Settings
+            li: a(href='/login') Login
+
+      #content
+        block content
+
+    script(src=static('/js/templates.js'))
+    script(src=static('/js/main.js'))
+    block scripts
